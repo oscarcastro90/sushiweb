@@ -1,7 +1,7 @@
-FROM registry.access.redhat.com/ubi8/httpd-24:1-209
+FROM registry.access.redhat.com/ubi8/ubi:latest
 
 RUN dnf update -y && \
-    dnf install -y telnet net-tools iproute && \
+    dnf install -y httpd telnet net-tools iproute && \
     dnf clean all && \
     rm -rf /var/cache/dnf
 
