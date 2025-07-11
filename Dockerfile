@@ -16,4 +16,7 @@ RUN apt update && apt install -y --no-install-recommends \
     less \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
+# Evitar usar root explícito, trabajar con usuario arbitrario
+# No especificamos USER para dejar que OpenShift asigne
+
 CMD ["/bin/bash"]
