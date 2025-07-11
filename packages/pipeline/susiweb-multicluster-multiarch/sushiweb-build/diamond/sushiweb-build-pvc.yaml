@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: sushiweb-build
-spec:
-  storageClassName: ibm-spectrum-scale-csi-fileset
